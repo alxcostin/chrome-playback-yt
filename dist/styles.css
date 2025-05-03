@@ -1,0 +1,48 @@
+.fln-speed-ui {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.fln-speed-btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Theme-specific container background + text */
+.fln-dark.fln-speed-ui {
+  background: #111;
+  color: white;
+}
+
+.fln-light.fln-speed-ui {
+  background: #eee;
+  color: black;
+}
+
+/* Theme-specific button styles */
+.fln-dark .fln-speed-btn {
+  background: white;
+  color: black;
+}
+
+.fln-light .fln-speed-btn {
+  background: black;
+  color: white;
+}
+
+/* Active button */
+.fln-speed-btn.active {
+  background: limegreen !important;
+  color: white !important;
+}
+
+/* While loading (optional) */
+.fln-loading .fln-speed-btn {
+  opacity: 0.4;
+  pointer-events: none;
+}
