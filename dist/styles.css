@@ -1,9 +1,11 @@
+/* Base styling for FLN control UI */
 .fln-speed-ui {
   display: flex;
   gap: 8px;
   margin: 12px 0;
   padding: 6px 12px;
   border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
 .fln-speed-btn {
@@ -13,7 +15,7 @@
   border-radius: 4px;
 }
 
-/* Theme-specific container background + text */
+/* Theme-aware container backgrounds */
 .fln-dark.fln-speed-ui {
   background: #111;
   color: white;
@@ -24,7 +26,7 @@
   color: black;
 }
 
-/* Theme-specific button styles */
+/* Theme-aware button colors */
 .fln-dark .fln-speed-btn {
   background: white;
   color: black;
@@ -35,14 +37,48 @@
   color: white;
 }
 
-/* Active button */
+/* Highlight selected speed */
 .fln-speed-btn.active {
   background: limegreen !important;
   color: white !important;
 }
 
-/* While loading (optional) */
+/* While loading, show dimmed state */
 .fln-loading .fln-speed-btn {
-  opacity: 0.4;
+  opacity: 0.5;
   pointer-events: none;
+}
+
+/* Options page styling */
+body {
+  font-family: system-ui, sans-serif;
+  padding: 24px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-note {
+  margin-top: 24px;
+  font-size: 0.9em;
+  color: gray;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
