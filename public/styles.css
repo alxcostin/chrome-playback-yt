@@ -1,68 +1,63 @@
 /* Base styling for FLN control UI */
 .fln-speed-ui {
   display: flex;
+  justify-content: center;
   gap: 8px;
   margin: 12px 0;
-  padding: 6px 12px;
+  padding-top: 24px;
   border-radius: 8px;
   transition: background 0.3s ease;
 }
 
 .fln-speed-btn {
-  padding: 6px 12px;
   cursor: pointer;
   border: none;
-  border-radius: 4px;
+  border-radius: 18px;
+  padding: 5px 14px;
+  font-size: 12px;
 }
 
 /* Theme-aware container backgrounds */
-.fln-dark.fln-speed-ui {
-  background: #111;
-  color: white;
-}
 
-.fln-light.fln-speed-ui {
-  background: #eee;
-  color: black;
-}
+/* - - - - dark theme- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 /* Theme-aware button colors */
 .fln-dark .fln-speed-btn {
-  background: white;
-  color: black;
-}
-
-.fln-light .fln-speed-btn {
-  background: black;
-  color: white;
+  background: rgb(39, 39, 39);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Highlight selected speed */
-.fln-speed-btn.active {
-  background: limegreen !important;
-  color: white !important;
+.fln-dark .fln-speed-btn.active {
+  box-shadow: 0 0 0 2px rgb(242, 242, 242);
 }
 
-/* While loading, show dimmed state */
-.fln-loading .fln-speed-btn {
-  opacity: 0.5;
-  pointer-events: none;
+.fln-dark .fln-speed-btn:hover {
+  box-shadow: 0 0 0 2px rgb(242, 242, 242);
+}
+/* - - - - light theme- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.fln-light .fln-speed-btn {
+  background: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-/* Options page styling */
+/* Highlight selected speed */
+.fln-light .fln-speed-btn.active {
+  box-shadow: 0 0 0 2px rgb(39, 39, 39, 0.7);
+}
+
+.fln-light .fln-speed-btn:hover {
+  box-shadow: 0 0 0 2px rgb(39, 39, 39, 0.7);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Options page styling - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 body {
   font-family: system-ui, sans-serif;
   padding: 24px;
   max-width: 600px;
   margin: auto;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 8px;
-  font-size: 1rem;
-  margin-top: 8px;
-  margin-bottom: 16px;
 }
 
 button {
