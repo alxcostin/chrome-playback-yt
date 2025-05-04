@@ -60,7 +60,7 @@ body {
   margin: auto;
 }
 
-button {
+/* button {
   padding: 8px 16px;
   font-size: 1rem;
   cursor: pointer;
@@ -76,4 +76,37 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+} */
+
+.options button {
+  border: none;
+  background: red;
+  padding: 10px 14px;
+  font-size: 24px;
+  border-radius: 6px;
+}
+.options .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options .content {
+  border: 1px solid;
+}
+
+.options .v-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.options #checkboxContainer label {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.options input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
 }
