@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Custom speed controls for YouTube playback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly toggle YouTube playback speed beyond the defaults (e.g. 2.5x, 3x, 3.5x)",
   "permissions": ["storage"],
   "options_page": "options.html",
