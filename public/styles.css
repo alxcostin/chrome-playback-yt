@@ -53,12 +53,6 @@
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Options page styling - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-body {
-  font-family: system-ui, sans-serif;
-  padding: 24px;
-  max-width: 600px;
-  margin: auto;
-}
 
 /* button {
   padding: 8px 16px;
